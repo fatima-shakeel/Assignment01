@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>React Router Example</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
+import React from "react";
+import ReactDOM from "react-dom";
+import Main from "./Main";
+ 
+ReactDOM.render(
+  <Main/>, 
+  document.getElementById("root")
+);
+
+
+import React, { Component } from "react";
+ 
+class Main extends Component {
+  render() {
+    return (
+        <div>
+          <h1>Simple SPA</h1>
+          <ul className="header">
+            <li><a href="/">Home</a></li>
+            <li><a href="/About">Stuff</a></li>
+            <li><a href="/contact">Contact</a></li>
+<li><a href="/TrendingVideos">Trending Videos</a></li>
+          </ul>
+          <div className="content">
+             
+          </div>
+        </div>
+    );
+  }
+}
+ 
+export default Main;
+
+
+class About extends Component {
+  render() {
+    return (
+      <div>
+        <h2>HELLO</h2>
+        <p>This is a user friendly website. U can watch top trending videos.search any videos of your choice..</p>
+ 
+             </div>
+    );
+  }
+}
+ 
+
+
+import React, { Component } from "react";
+ 
+class Contact extends Component {
+  render() {
+    return (
+      <div>
+        <h2>GOT QUESTIONS?</h2>
+        <p>The easiest thing to do is chat on
+        our <a href="http://pakvids4u.com">pakvids4u</a>.
+        </p>
+      </div>
+    );
+  }
+}
+ 
+export default Contact;
